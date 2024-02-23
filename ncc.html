@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Registration Form</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <div class="banner-container">
+        <img src="https://nccauto.gov.in/Default/front/images/inner-banner.jpg" alt="Inner Banner">
+        <div class="banner-text">
+            <h1>NCC REGISTRATION FORM</h1>
+            <h2>1. Personal Details</h2>
+        </div>
+    </div>
+    <div class="form-page">
+        <p id="description">Fill Details</p>
+        <form id="survey-form" action="https://www.freecodecamp.com/email-submit" enctype="multipart/form-data">
+            <fieldset id="field">
+                <!-- Upload Picture -->
+                <div class="row">
+                    <label for="picture">Upload Picture:</label>
+                    <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+                </div>
+                
+                <!-- First Name, Middle Name, Last Name, Mobile Number, Gender, Email -->
+                <div class="row">
+                    <div class="col">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" required><br><br>
+                    </div>
+                    <div class="col">
+                        <label for="middlename">Middle Name:</label>
+                        <input type="text" id="middlename" name="middlename" placeholder="Middle Name"><br><br>
+                    </div>
+                    <div class="col">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required><br><br>
+                    </div>
+                    <div class="col">
+                        <label for="mobilenumber">Mobile Number:</label>
+                        <input type="tel" id="mobilenumber" name="mobilenumber" placeholder="Mobile Number" pattern="[0-9]{10}" required><br><br>
+                    </div>
+                    <div class="col">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="transgender">Transgender</option>
+                        </select><br><br>
+                    </div>
+                    <div class="col">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required><br><br>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="saveAndNext">Save and Next</button>
+                    </div>
+                </div>
+
+                <!-- Additional Fields -->
+                <fieldset id="additionalDetails" style="display: none;">
+                    <legend>2. Additional Details</legend>
+                    <!-- Additional Fields -->
+                    <div class="row">
+                        <div class="col">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="fathername">Father/Guardian Name:</label>
+                            <input type="text" id="fathername" name="fathername" placeholder="Father/Guardian Name" required><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="mothername">Mother Name:</label>
+                            <input type="text" id="mothername" name="mothername" placeholder="Mother Name" required><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="nationality">Nationality:</label>
+                            <input type="text" id="nationality" name="nationality" placeholder="Nationality" required><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="studying">Present Studying:</label>
+                            <input type="text" id="studying" name="studying" placeholder="Present Studying" required><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="category">Category:</label><br>
+                            <select id="category" name="category">
+                                <option value="general">General</option>
+                                <option value="sc">SC</option>
+                                <option value="st">ST</option>
+                                <option value="obc">OBC</option>
+                                <option value="oc">OC</option>
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="cadettype">Cadet Type:</label><br>
+                            <select id="cadettype" name="cadettype">
+                                <option value="jd">JD</option>
+                                <option value="jw">JW</option>
+                                <option value="sw">SW</option>
+                                <option value="sd">SD</option>
+                                <option value="wing">Wing</option>
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="wing">Wing:</label><br>
+                            <select id="wing" name="wing">
+                                <option value="air">Air</option>
+                                <option value="army">Army</option>
+                                <option value="navy">Navy</option>
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="state">State:</label><br>
+                            <select id="state" name="state">
+                                <option value="state1">State 1</option>
+                                <option value="state2">State 2</option>
+                                <!-- Add more states as needed -->
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="nccdte">NCC DTE:</label><br>
+                            <select id="nccdte" name="nccdte">
+                                <option value="dte1">DTE 1</option>
+                                <option value="dte2">DTE 2</option>
+                                <!-- Add more NCC DTEs as needed -->
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="nccgroup">NCC Group:</label><br>
+                            <select id="nccgroup" name="nccgroup">
+                                <option value="group1">Group 1</option>
+                                <option value="group2">Group 2</option>
+                                <!-- Add more NCC groups as needed -->
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="nccunit">NCC Unit:</label><br>
+                            <select id="nccunit" name="nccunit">
+                                <option value="unit1">Unit 1</option>
+                                <option value="unit2">Unit 2</option>
+                                <!-- Add more NCC units as needed -->
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <label for="schoolcollege">School/College Name:</label><br>
+                            <select id="schoolcollege" name="schoolcollege">
+                                <option value="school1">School 1</option>
+                                <option value="school2">School 2</option>
+                                <!-- Add more schools/colleges as needed -->
+                            </select><br><br>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="row">
+                    <input type="submit" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('saveAndNext').addEventListener('click', function() {
+            document.getElementById('additionalDetails').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
